@@ -1,1 +1,6 @@
 /* @TODO add color variables */
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
