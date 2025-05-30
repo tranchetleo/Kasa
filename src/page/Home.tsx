@@ -1,10 +1,14 @@
+import './Home.css';
+import Banner from "../components/Banner";
+import accueilBanner from "../assets/images/accueil-banner.png";
+
 const Home = () => {
   return (
-    <>
-      <h1>
-        Bienvenue sur mon site web
-      </h1>
-    </>
+    <div className="home">
+      {Banner("home", accueilBanner, "Image de la page d'accueil", "Chez vous, partout et ailleurs")}
+      <div className="card-container">
+      </div>
+    </div>
   );
 };
 

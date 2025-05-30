@@ -1,0 +1,23 @@
+.home {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.card-container {
+  background-color: #f0f0f0;
+  width: calc(100% - 40px);
+  margin: 40px auto;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+@media (min-width: 1024px) {
+  .card-container {
+    width: calc(100% - 80px);
+    padding: 40px;
+  }
+}
