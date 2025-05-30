@@ -4,20 +4,22 @@
 }
 
 .card-container {
-  background-color: #f0f0f0;
-  width: calc(100% - 40px);
+  width: 100%;
   margin: 40px auto;
   border-radius: 20px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 0;
 }
 
 @media (min-width: 1024px) {
   .card-container {
+    background-color: #f0f0f0;
     width: calc(100% - 80px);
     padding: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
