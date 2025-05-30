@@ -7,7 +7,7 @@ import Location from '../page/Location.tsx'
 
 function Router() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/Home'>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
