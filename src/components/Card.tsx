@@ -1,4 +1,5 @@
 import "./Card.css";
+import { Link } from "react-router-dom";
 
 export default function Card(
   src: string,
@@ -7,12 +8,12 @@ export default function Card(
 ) {
   return (
     <div className="card">
-      <a href={`/location/${id}`}>
+      <Link to={`/location/${id}`}>
         <div className="card-overlay"></div>
         <img src={src} alt="" />
         <h2>{title}</h2>
         <span className="card-id">{id}</span>
-      </a>
+      </Link>
     </div>
   );
 }

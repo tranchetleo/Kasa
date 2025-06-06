@@ -1,20 +1,21 @@
 import "./Header.css";
+import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.png";
 
 const Header = () => {
   return (
     <header>
       <div className="navbar">
-        <a href="/">
+        <Link to="/">
           <img src={logo} alt="" />
-        </a>
+        </Link>
         <nav>
           <ul>
             <li>
-              <a href="/">Accueil</a>
+              <Link to="/">Accueil</Link>
             </li>
             <li>
-              <a href="/a-propos">A Propos</a>
+              <Link to="/a-propos">A Propos</Link>
             </li>
           </ul>
         </nav>
