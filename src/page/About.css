@@ -1,0 +1,18 @@
+.about {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.about .collapse-container {
+  width: 100%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 1024px) {
+  .about .collapse-container {
+    width: 90%;
+  }
+}
