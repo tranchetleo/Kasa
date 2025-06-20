@@ -23,11 +23,6 @@ export default function Collapse({ title, description }: CollapseProps) {
       </button>
       <div
         className={`collapse-content${open ? " open" : " closed"}`}
-        style={{
-          maxHeight: open ? "200px" : "0",
-          transition: "max-height 0.3s ease",
-          overflow: "hidden",
-        }}
       >
         <div className="collapse-description">{description}</div>
       </div>

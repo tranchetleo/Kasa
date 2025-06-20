@@ -29,7 +29,7 @@ header ul li {
 header ul li a {
   text-decoration: none;
   text-transform: uppercase;
-  color: #000;
+  color: black;
 }
 
 header ul li a:hover {

@@ -1,7 +1,8 @@
-/* @TODO add color variables */
 :root {
   --primary-color: #FF6060;
+  --darker-white: #f0f0f0;
   --light-gray: #fbfbfb;
+  --dark-gray: #333;
 }
 
 body {

@@ -17,7 +17,7 @@
 
 @media (min-width: 1024px) {
   .card-container {
-    background-color: #f0f0f0;
+    background-color: var(--darker-white);
     width: calc(100% - 80px);
     padding: 40px;
     grid-template-columns: 1fr 1fr 1fr;

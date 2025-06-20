@@ -59,6 +59,14 @@
   color: var(--primary-color);
 }
 
+.desc-stuff {
+  width: 90%;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 @media (min-width: 1024px) {
   .location-details {
     flex-direction: row;
@@ -96,5 +104,10 @@
   .owner-rating .owner .owner-picture {
     width: 64px;
     height: 64px;
+  }
+
+  .desc-stuff {
+    flex-direction: row;
+    gap: 2rem;
   }
 }

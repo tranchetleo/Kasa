@@ -2,9 +2,10 @@ import "./Location.css";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import locations from "../data/logement.json"; // adjust the path as needed
+import locations from "../data/logement.json";
 import Carrousel from "../components/Carrousel";
 import Tag from "../components/Tag";
+import Collapse from "../components/Collapse";
 
 const Location = () => {
   const { id } = useParams<{ id: string }>();
@@ -61,6 +62,18 @@ const Location = () => {
             />
           </div>
         </div>
+      </div>
+      <div className="desc-stuff">
+        <Collapse
+          title="Description"
+          description={location?.description || ""}
+        />
+        <Collapse
+          title="Équipements"
+          description={location?.equipments
+            ? location.equipments.join(", ")
+            : "Aucun équipement disponible."}
+        />
       </div>
     </div>
   );
