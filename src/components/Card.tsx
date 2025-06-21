@@ -7,7 +7,7 @@ export default function Card(
   id: string,
 ) {
   return (
-    <div className="card">
+    <div className="card" key={id}>
       <Link to={`/location/${id}`}>
         <div className="card-overlay"></div>
         <img src={src} alt="" />
